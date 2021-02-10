@@ -1,0 +1,71 @@
+body {
+  background-color: $primary-bg-color;
+  color: $text-color;
+  font-family: $common-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.current-page {
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.list-reset {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-reset {
+  text-decoration: none;
+}
+
+// .link-reset:visited,
+// .link-reset:active {
+//   // color: $color-dark;
+// }
+
+/* container. centering main content*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-section,
+.team,
+.clients__section,
+.directions-section,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio {
+  padding-top: 92px;
+}
+
+%section__heading {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: $primary-font-color;
+  text-align: center;
+}

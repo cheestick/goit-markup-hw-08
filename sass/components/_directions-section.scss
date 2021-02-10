@@ -1,0 +1,7 @@
+.directions-section {
+  padding-top: 0;
+
+  &__heading {
+    @extend %section__heading;
+  }
+}

@@ -1,0 +1,10 @@
+.clients {
+  &__heading {
+    @extend %section__heading;
+  }
+
+  &__list {
+    display: flex;
+    color: $fill-dark;
+  }
+}

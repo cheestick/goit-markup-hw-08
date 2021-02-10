@@ -1,0 +1,35 @@
+.page-header {
+  border-bottom: 1px solid $separator-color;
+
+  & > .container {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $primary-font-color;
+
+    transition: color $transition-defaults;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__link.current-page {
+    position: relative;
+    color: $accent-color;
+  }
+}

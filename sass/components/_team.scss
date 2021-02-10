@@ -1,0 +1,26 @@
+.team {
+  background-color: $secondary-bg-color;
+
+  &__heading {
+    @extend %section__heading;
+  }
+
+  &__list {
+    display: flex;
+    font-size: 0;
+  }
+
+  &__item {
+    max-width: 270px;
+    background: $primary-bg-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow: $team-card-shadow;
+    border-radius: 0 0 4px 4px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

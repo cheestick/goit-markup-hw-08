@@ -1,0 +1,16 @@
+.navigation__contacts-list {
+  display: flex;
+  margin-left: auto;
+
+  & .page-header__link {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    line-height: inherit;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

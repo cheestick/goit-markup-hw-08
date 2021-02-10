@@ -1,0 +1,30 @@
+.directions-list {
+  display: flex;
+  font-size: 0;
+
+  &__item {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

@@ -1,0 +1,133 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $primary-font-color;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+
+  &__input,
+  &__user-comment {
+    margin: 0;
+    width: 100%;
+    padding: 11px 16px 11px 42px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: border-color $transition-defaults;
+  }
+
+  &__input {
+    height: 40px;
+  }
+
+  &__user-comment {
+    resize: none;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    transition: fill $transition-defaults;
+  }
+
+  &__input:focus,
+  &__user-comment:focus {
+    border-color: $accent-color;
+    outline: transparent;
+  }
+
+  &__input:focus + &__input-icon {
+    fill: $accent-color;
+  }
+
+  &__user-policy {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 32px;
+    cursor: pointer;
+  }
+
+  &__submit {
+    @extend .button;
+    padding: 10px 55px;
+    align-self: center;
+  }
+
+  &__submit:hover,
+  &__submit:focus {
+    background-color: $button-hover-color;
+  }
+
+  &__is-policy--unchecked,
+  &__is-policy--checked {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin-left: -24px;
+    width: 16px;
+    height: 15px;
+    opacity: 1;
+    transition: opacity $transition-defaults;
+  }
+
+  &__is-policy--checked {
+    opacity: 0;
+  }
+
+  &__is-policy:checked ~ &__is-policy--unchecked {
+    opacity: 0;
+  }
+
+  &__is-policy:checked ~ &__is-policy--checked {
+    opacity: 1;
+  }
+}
+
+.user-policy__link,
+.user-policy__link:active,
+.user-policy__link:hover,
+.user-policy__link:visited {
+  text-decoration: underline;
+  color: $accent-color;
+}
