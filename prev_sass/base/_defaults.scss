@@ -38,18 +38,27 @@ body {
 //   // color: $color-dark;
 // }
 
-// .features-section,
-// .team,
-// .clients__section,
-// .directions-section,
-// .portfolio {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+/* container. centering main content*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-// .portfolio {
-//   padding-top: 92px;
-// }
+.features-section,
+.team,
+.clients__section,
+.directions-section,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio {
+  padding-top: 92px;
+}
 
 %section__heading {
   margin: 0;

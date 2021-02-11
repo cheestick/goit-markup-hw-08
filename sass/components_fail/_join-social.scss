@@ -1,0 +1,21 @@
+.join {
+  &__container {
+    margin-top: 12px;
+    margin-right: 93px;
+  }
+
+  &__heading {
+    @extend .subscribe__text;
+  }
+}
+
+.subscribe__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-light;
+}

@@ -1,0 +1,20 @@
+$icon-set: antenna, clock, diagram, astronaut;
+
+@each $icon in $icon-set {
+  .icon-#{$icon}:before {
+    background-image: url('../images/svg/optimized/#{$icon}.svg');
+  }
+}
+
+// .icon-antenna::before {
+//   background-image: url('../images/svg/optimized/antenna.svg');
+// }
+// .icon-clock::before {
+//   background-image: url('../images/svg/optimized/clock.svg');
+// }
+// .icon-diagram::before {
+//   background-image: url('../images/svg/optimized/diagram.svg');
+// }
+// .icon-astronaut::before {
+//   background-image: url('../images/svg/optimized/astronaut.svg');
+// }

@@ -13,102 +13,109 @@
   </head>
   <body>
     <!-- navigation and contact information -->
-    <header class="page-header">
-      <div class="container">
-        <nav class="navigation">
-          <a
-            class="logo link-reset"
-            href="../index.html"
+<header class="page-header">
+      <div class="page-header__container">
+        <a  class="link-reset company-logo"
+            href="./index.html"
             aria-label="логотип компании WebStudio"
-            lang="en"
-            ><span class="web">Web</span>Studio</a
-          >
-          <ul class="list-reset navigation__pages-list">
-            <li class="item">
-              <a class="link-reset page-header__link" href="../index.html">
-                Студия
-              </a>
-            </li>
-            <li class="item">
-              <a
-                class="link-reset page-header__link  current-page"
-                href="./pages/portfolio.html"
-                target="_blank"
-                >Портфолио</a
-              >
-            </li class="item">
-            <li><a class="link-reset page-header__link " href="">Контакты</a></li>
-          </ul>
-        </nav>
+            lang="en"><span class="company-logo--colored">Web</span>Studio</a>
 
-        <ul class="navigation__contacts-list list-reset">
-          <li class="item">
-            <a class="link-reset page-header__link"
-              href="mailto:info@devstudio.com"
-              lang="en">
-              <svg class="icon mail-icon">
-                <use href="../images/svg/icons-sprite.svg#icon-envelope">
-              </svg>
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="item">
-            <a class="link-reset page-header__link" href="tel:+380961111111">
-              <svg class="icon phone-icon">
-                <use href="../images/svg/icons-sprite.svg#icon-smartphone"/>
-              </svg>
-              <span>+38 096 111 11 11</span>
-            </a>
-          </li>
-        </ul>
+        <button type="button" class="mobile-menu__button" data-menu-button>
+          <svg width="40px" height="40px" class="mobile-menu__icon">
+            <use href="./images/svg/icons-sprite.svg#icon-mobile-button" class="mobile-menu__icon--to-open"></use>
+            <use href="./images/svg/icons-sprite.svg#icon-mobile-button-x" class="mobile-menu__icon--to-close"></use>
+          </svg>
+        </button>
+        
+          <div class="mobile-menu" aria-expanded="false" data-menu>
+          <nav class="mobile-menu__nav">          
+              <ul class="list-reset nav">
+                <li class="nav__item">
+                  <a class="link-reset nav__link" href="../index.html">
+                    Студия
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="link-reset nav__link current-page"
+                    href="./pages/portfolio.html"
+                    target="_blank"
+                    >Портфолио</a
+                  >
+                </li class="nav__item">
+                <li><a class="link-reset nav__link " href="">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <ul class="list-reset contacts">
+              <li class="contacts__item">
+                <a class="link-reset contacts__link"
+                  href="mailto:info@devstudio.com"
+                  lang="en">
+                  <svg class="icon icon__envelope">
+                    <use href="./images/svg/icons-sprite.svg#icon-envelope">
+                  </svg>
+                  <span>info@devstudio.com</span>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="link-reset contacts__link" href="tel:+380961111111">
+                  <svg class="icon icon__smartphone">
+                    <use href="./images/svg/icons-sprite.svg#icon-smartphone"/>
+                  </svg>
+                  <span>+38 096 111 11 11</span>
+                </a>
+              </li>
+            </ul>
+          </div>
       </div>
     </header>
     <!-- main portfolio examles and filters container -->
     <main class="main">
-      <section class="portfolio">
-        <div class="container">
+      <section class="portfolio-block">
+        <div class="portfolio-block__container">
           <h1 class="visually-hidden">Портфолио</h1>
           <!-- filtering will be as radiobuttons -->
-          <ul class="filters list-reset">
-            <li class="filters__item">
+          <ul class="list-reset portfolio-block__filters">
+            <li class="filter">
               <button
-                class="filters__button filters--selected button-cursor"
+                class="filter__button filter__button--selected button-cursor"
                 type="button"
                 name="all"
               >
                 Все
               </button>
             </li>
-            <li class="filters__item">
+            <li class="filter">
               <button
-                class="filters__button button-cursor"
+                class="filter__button button-cursor"
                 type="button"
                 name="sites"
               >
                 Веб-сайты
               </button>
             </li>
-            <li class="filters__item">
+            <li class="filter">
               <button
-                class="filters__button button-cursor"
+                class="filter__button button-cursor"
                 type="button"
                 name="app"
               >
                 Приложения
               </button>
             </li>
-            <li class="filters__item">
+            <li class="filter">
               <button
-                class="filters__button button-cursor"
+                class="filter__button button-cursor"
                 type="button"
                 name="design"
               >
                 Дизайн
               </button>
             </li>
-            <li class="filters__item">
+            <li class="filter">
               <button
-                class="filters__button button-cursor"
+                class="filter__button button-cursor"
                 type="button"
                 name="marketing"
               >
@@ -117,150 +124,150 @@
             </li>
           </ul>
           <!-- filter result -->
-          <ul class="projects list-reset">
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading">Технокряк</h3>
-                  <p class="projects__type">Веб-сайт</p>
+          <ul class="list-reset result-list">
+            <li class="project-card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading">Технокряк</h3>
+                  <p class="project-card__type">Веб-сайт</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                 <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/techcrack-o.jpg"
                   alt="сайт на ноутбуке"
                 />
                 </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading">
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h3>
-                  <p class="projects__type">Дизайн</p>
+                  <p class="project-card__type">Дизайн</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/basketball-o.jpg"
                   alt="два баскетболистка под кольцом"
                 />
               </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading">
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading">
                     Ресторан <span lang="en">Seafood</span>
                   </h3>
-                  <p class="projects__type">Приложение</p>
+                  <p class="project-card__type">Приложение</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/seafood-o.jpg"
                   alt="логотип ресторана "
                 />
                 </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading">
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading">
                     Проект <span lang="en">Prime</span>
                   </h3>
-                  <p class="projects__type">Маркетинг</p>
+                  <p class="project-card__type">Маркетинг</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/headphones-o.jpg"
                   alt="наушники на нейтральном фоне"
                 />
                 </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading">
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading">
                     Проект <span lang="en">Boxes</span>
                   </h3>
-                  <p class="projects__type">Приложение</p>
+                  <p class="project-card__type">Приложение</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/boxes-project-o.jpg"
                   alt="иллюстрация двух коробок на нейтральном фоне"
                 />
                 </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading" lang="en">
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading" lang="en">
                     Inspiration has no Borders
                   </h3>
-                  <p class="projects__type">Веб-сайт</p>
+                  <p class="project-card__type">Веб-сайт</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/no-borders-o.jpg"
                   alt="приложение на мониторе"
                 />
                 </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading">
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading">
                     Издание <span lang="en">Limited Edition</span>
                   </h3>
-                  <p class="projects__type">Дизайн</p>
+                  <p class="project-card__type">Дизайн</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/limited-edition-o.jpg"
                   alt="разворот журнала с заглавием ограниченное издание"
                 />
                 </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading">
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading">
                     Проект <span lang="en">LAB</span>
                   </h3>
-                  <p class="projects__type">Маркетинг</p>
+                  <p class="project-card__type">Маркетинг</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/label-tag-o.jpg"
                   alt="бирка с логотипом label tag"
                 />
                 </div>
               </a>
             </li>
-            <li class="projects__card">
-              <a class="link-reset projects__link" href="">
-                <div class="projects__info">
-                  <h3 class="projects__heading" lang="en">Growing Business</h3>
-                  <p class="projects__type">Приложение</p>
+            <li class="project__card">
+              <a class="link-reset project-card__link" href="">
+                <div class="project-card__info">
+                  <h3 class="project-card__heading" lang="en">Growing Business</h3>
+                  <p class="project-card__type">Приложение</p>
                 </div>
-                <div class="projects__overlay">
+                <div class="project-card__overlay">
                   <img
-                  class="projects__image"
+                  class="project-card__image"
                   src="../images/portfolio/optimized/growing-business-o.jpg"
                   alt="печатающие руки за ноутбуком. приложене ростущий бизнесс"
                 />
@@ -272,70 +279,71 @@
       </section>
     </main>
     <!-- aux information and adress -->
-        <footer class="page-footer">
-      <div class="container">
-        <address class="address">
-          <a
-            class="logo link-reset"
-            href="../index.html"
+            <footer class="page-footer">
+      <div class="page-footer__container">
+        <a  class="link-reset company-logo company-logo--white"
+            href="./index.html"
             aria-label="логотип компании WebStudio"
-            lang="en"
-            ><span class="web">Web</span>Studio</a
-          >
+            lang="en"><span class="company-logo--colored">Web</span>Studio</a>
+
+        <address class="address">
           <p class="address__postal">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="adress__contacts list-reset">
-            <li class="contacts__item">
-              <a class="contacts__email link-reset" href="mailto:info@example.com" lang="en"
+        
+          <ul class="list-reset adress__contacts">
+            <li class="contact">
+              <a class="link-reset contact__email" href="mailto:info@example.com" lang="en"
                 >info@example.com</a
               >
             </li>
-            <li class="contacts__item">
-              <a class="contacts__tel link-reset" href="tel:+380991111111"
+            <li class="contact">
+              <a class="link-reset contact__tel" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
           </ul>
         </address>
-        <div class="join__container">
-          <h2 class="join__heading">присоединяйтесь</h2>
-          <ul class="list-reset social-network__list">
-            <li class="social-network__item">
+
+        <div class="join-block">
+          <h2 class="join-block__heading">присоединяйтесь</h2>
+          <ul class="list-reset join-block__social-networks">
+            <li class="social-network">
               <a href="" class="link-reset social-network__link">
-              <svg class="social-network__icon social-network--light-icon">
+              <svg class="social-network__icon social-network__icon--light">
                 <use href="../images/svg/icons-sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-            <li class="social-network__item">
+            <li class="social-network">
               <a href="" class="link-reset social-network__link">
-                <svg class="social-network__icon social-network--light-icon">
+                <svg class="social-network__icon social-network__icon--light">
                   <use href="../images/svg/icons-sprite.svg#icon-twitter"></use>
                 </svg>
             </a>
           </li>
-            <li class="social-network__item">
+            <li class="social-network">
               <a href="" class="link-reset social-network__link">
-                <svg class="social-network__icon social-network--light-icon">
+                <svg class="social-network__icon social-network__icon--light">
                   <use href="../images/svg/icons-sprite.svg#icon-facebook"></use>
                 </svg>
             </a>
           </li>
-            <li class="social-network__item">
+            <li class="social-network">
               <a href="" class="link-reset social-network__link">
-                <svg class="social-network__icon social-network--light-icon">
+                <svg class="social-network__icon social-network__icon--light">
                   <use href="../images/svg/icons-sprite.svg#icon-linkedin"></use>
                 </svg>
             </a>
           </li>
           </ul>  
         </div>
-        <div class="subscribe">
-          <p class="subscribe__text">Подпишитесь на рассылку</p>
-          <form action="" autocomplete="off" class="subscribe__form">
-            <input type="email" name="email" placeholder="E-mail" class="subscribe__email">
-            <button type="button" class=" subscribe__button">
+        
+        <div class="subscribe-block">
+          <p class="subscribe-block__text">Подпишитесь на рассылку</p>
+          <form action="" autocomplete="off" class="subscribe-block__form">
+            <input type="email" name="email" placeholder="E-mail" class="subscribe-block__email">
+            <button type="button" class="button subscribe-block__button">
               Подписаться
-              <svg class="subscribe__icon">
+              <svg class="button__icon">
                 <use href="../images/svg/icons-sprite.svg#icon-send"></use>
               </svg></button>
           </form>

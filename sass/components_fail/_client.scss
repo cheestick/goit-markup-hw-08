@@ -1,0 +1,34 @@
+.client {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $fill-dark;
+    border-radius: 4px;
+    transition: border-color $transition-defaults;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    border-color: $accent-color;
+    outline: transparent;
+  }
+
+  &__logo {
+    fill: $fill-dark;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    transition: fill $transition-defaults;
+  }
+
+  &__icon:hover &__logo,
+  &__icon:focus &__logo {
+    fill: $accent-color;
+  }
+}

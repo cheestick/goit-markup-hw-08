@@ -1,0 +1,38 @@
+.filters {
+  margin: 0;
+  margin-bottom: 52px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: $primary-font-color;
+    background-color: $secondary-bg-color;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: transparent;
+    transition: background-color $transition-defaults,
+      color $transition-defaults, box-shadow $transition-defaults;
+  }
+
+  &--selected {
+    background-color: $accent-color;
+    color: $color-light;
+    cursor: pointer;
+    box-shadow: $shadow-selected;
+    outline: transparent;
+  }
+}
+
+.button-cursor:hover,
+.button-cursor:focus {
+  @extend .filters--selected;
+}

@@ -1,0 +1,18 @@
+/* navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+
+  & .logo {
+    margin-right: 93px;
+  }
+
+  &__pages-list {
+    display: flex;
+  }
+
+  &__pages-list > .item:not(:last-child),
+  &__contacts-list > .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}

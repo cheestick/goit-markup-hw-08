@@ -1,0 +1,29 @@
+.address {
+  font-style: normal;
+  margin-right: 70px;
+
+  & .logo {
+    display: block;
+    margin-bottom: 20px;
+    color: $color-light;
+  }
+
+  &__postal {
+    color: $color-light;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+}
+
+.contacts {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__tel,
+  &__tel:visited,
+  &__email,
+  &__email:visited {
+    color: $footer-contacts-color;
+  }
+}

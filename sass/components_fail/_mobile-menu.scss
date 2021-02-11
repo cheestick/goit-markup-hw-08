@@ -1,0 +1,20 @@
+.mobile-menu {
+  &__button {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: $color-dark;
+    cursor: pointer;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    fill: $accent-color;
+  }
+
+  &__drop-down {
+    display: none;
+  }
+}
