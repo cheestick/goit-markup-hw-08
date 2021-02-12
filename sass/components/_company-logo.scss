@@ -1,0 +1,16 @@
+.company-logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: $color-dark;
+
+  &--colored {
+    color: $accent-color;
+  }
+
+  &--white {
+    color: $color-light;
+  }
+}

@@ -1,0 +1,40 @@
+.social-network {
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $footer-social-link-bg;
+    color: $fill-light;
+    transition: background-color $transition-defaults;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+    outline: transparent;
+  }
+
+  &__link:hover > &__icon,
+  &__link:focus > &__icon {
+    fill: $fill-light;
+  }
+
+  &__icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+    fill: $fill-dark;
+    transition: fill $transition-defaults;
+  }
+
+  &--light-icon {
+    fill: $fill-light;
+  }
+}

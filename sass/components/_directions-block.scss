@@ -1,0 +1,9 @@
+.directions-block {
+  &__heading {
+    @extend %section__heading;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    display: none;
+  }
+}

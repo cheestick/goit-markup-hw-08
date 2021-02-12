@@ -1,0 +1,13 @@
+.page-header {
+  border-bottom: 1px solid $separator-color;
+
+  & .container {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+      min-height: 80px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.team-block {
+  background-color: $secondary-bg-color;
+
+  & .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__heading {
+    @extend %section__heading;
+  }
+
+  &__profiles {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    margin: -15px;
+  }
+}
