@@ -9,4 +9,7 @@
   &__email:visited {
     color: $footer-contacts-color;
   }
+
+  @media screen and (min-width: $tablet) {
+  }
 }

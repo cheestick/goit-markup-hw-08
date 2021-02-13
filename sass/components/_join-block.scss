@@ -1,9 +1,4 @@
 .join-block {
-  // &__container {
-  //   margin-top: 12px;
-  //   margin-right: 93px;
-  // }
-
   margin-bottom: 60px;
 
   &__heading {
@@ -12,6 +7,14 @@
 
   &__social-networks {
     @extend %social-networks;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
   }
 }
 

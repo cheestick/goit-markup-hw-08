@@ -452,6 +452,7 @@ body {
 }
 
 .company-logo--white {
+  display: block;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -1071,13 +1072,36 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
 }
 
 .address {
@@ -1101,6 +1125,18 @@ body {
 
 .join-block {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .join-block {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-block {
+    margin-top: 12px;
+  }
 }
 
 .subscribe__text, .join-block__heading, .subscribe-block__text {
@@ -1157,7 +1193,10 @@ body {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
+  .subscribe-block {
+    width: 450px;
+  }
   .subscribe-block__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1166,6 +1205,13 @@ body {
   }
   .subscribe-block__email {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-block__email {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 

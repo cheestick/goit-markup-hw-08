@@ -3,11 +3,30 @@
   padding-bottom: 60px;
   background-color: $footer-bg-color;
 
-  & .container {
+  .container {
     display: flex;
-    flex-direction: column;
     flex-basis: 100%;
-    // justify-content: stretch;
+    // align-items: center;
     text-align: center;
+  }
+
+  @media screen and (max-width: $tablet - 1px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    .container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .container {
+      justify-content: space-between;
+      text-align: left;
+    }
   }
 }
