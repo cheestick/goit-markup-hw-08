@@ -1,0 +1,17 @@
+.clients-block {
+  & .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__heading {
+    @extend %section__heading;
+  }
+
+  &__clients {
+    display: flex;
+    flex-wrap: wrap;
+    color: $fill-dark;
+    margin: -15px;
+  }
+}
