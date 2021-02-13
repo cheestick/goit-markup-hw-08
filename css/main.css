@@ -672,58 +672,6 @@ body {
   }
 }
 
-@media screen and (max-width: 768px -1px) {
-  .features {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features__item {
-    margin: 15px;
-    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
-        flex-basis: calc((100% - 4 * 15px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__item {
-    -ms-flex-preferred-size: 270px;
-        flex-basis: 270px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
 .features__item::before {
   content: '';
   display: block;
@@ -747,6 +695,42 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features__heading {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .icon-antenna:before {
@@ -763,6 +747,12 @@ body {
 
 .icon-astronaut:before {
   background-image: url("../images/svg/optimized/astronaut.svg");
+}
+
+@media screen and (max-width: 1199px) {
+  .directions-block {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -806,12 +796,6 @@ body {
   text-align: center;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
-}
-
-@media screen and (max-width: 1199px) {
-  .directions {
-    display: none;
-  }
 }
 
 .team-block {
@@ -881,6 +865,28 @@ body {
   line-height: 1.19;
   margin: 0;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .teammate {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  .teammate__avatar {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .teammate {
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
+  }
+  .teammate__avatar {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .social-network:not(:last-child) {

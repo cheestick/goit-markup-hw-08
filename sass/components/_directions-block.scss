@@ -3,6 +3,10 @@
     @extend %section__heading;
   }
 
+  @media screen and (max-width: $desktop - 1px) {
+    display: none;
+  }
+
   @media screen and (min-width: $desktop) {
     & .container {
       padding-top: 94px;
@@ -43,9 +47,5 @@
     text-align: center;
     color: #ffffff;
     background: rgba(47, 48, 58, 0.8);
-  }
-
-  @media screen and (max-width: $desktop - 1px) {
-    display: none;
   }
 }

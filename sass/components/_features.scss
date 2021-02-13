@@ -1,39 +1,5 @@
 .features {
   // list
-  @media screen and (max-width: $tablet -1px) {
-    text-align: center;
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    flex-wrap: nowrap;
-    margin: 0; // check if it wokrks without this
-  }
-  // items
-  &__item {
-    @media screen and (min-width: $tablet) {
-      margin: 15px;
-      flex-basis: calc((100% - 4 * 15px) / 2);
-    }
-
-    @media screen and (min-width: $desktop) {
-      flex-basis: 270px;
-    }
-  }
-
-  &__item:not(:last-child) {
-    @media screen and (max-width: $mobile) {
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 30px;
-    }
-  }
 
   &__item::before {
     content: '';
@@ -59,6 +25,39 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $primary-font-color;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    &__heading {
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    // flex-wrap: nowrap;
+    // margin: 0; // check if it wokrks without this
+  }
+  // items
+  &__item {
+    @media screen and (min-width: $tablet) {
+      margin: 15px;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 8 * 15px) / 4);
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
