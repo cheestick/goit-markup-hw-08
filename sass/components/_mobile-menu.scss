@@ -12,20 +12,15 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    // opacity: 0;
     background-color: #ffffff;
-    // transform: translateX(100%);
-    // transition: opacity $transition-defaults;
 
     &.is-open {
       display: flex;
       flex-direction: column;
-      // opacity: 1;
-      // transform: translateX(-15px);
     }
 
-    &__nav {
-    }
+    // &__nav {
+    // }
   }
 
   @media screen and (min-width: $tablet) {

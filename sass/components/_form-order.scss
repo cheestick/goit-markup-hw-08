@@ -83,8 +83,17 @@
   &__user-policy {
     position: relative;
     margin-bottom: 30px;
-    margin-left: 32px;
+    margin-left: 20px;
+    font-size: 14px;
     cursor: pointer;
+
+    @media screen and (max-width: $desktop - 1px) {
+      font-size: 12px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 32px;
+    }
   }
 
   &__submit {
@@ -104,11 +113,15 @@
     top: 50%;
     transform: translateY(-50%);
     display: block;
-    margin-left: -24px;
+    margin-left: -20px;
     width: 16px;
     height: 15px;
     opacity: 1;
     transition: opacity $transition-defaults;
+
+    @media screen and (min-width: $desktop) {
+      margin-left: -24px;
+    }
   }
 
   &__is-policy--checked {

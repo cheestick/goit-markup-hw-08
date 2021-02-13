@@ -13,6 +13,15 @@
     }
   }
 
+  &__link {
+    color: $color-dark;
+  }
+
+  &__link.current-page,
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
   // &__pages-list > .item:not(:last-child),
   // &__contacts-list > .item:not(:last-child) {
   //   margin-right: 50px;
