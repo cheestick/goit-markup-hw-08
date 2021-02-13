@@ -287,23 +287,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.current-page {
-  color: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .current-page::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196f3;
-    position: absolute;
-    bottom: 0;
-  }
-}
-
 .list-reset {
   list-style-type: none;
   padding: 0;
@@ -473,6 +456,33 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header .company-logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header .company-logo {
+    margin-right: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: absolute;
@@ -499,22 +509,14 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 /* navigation */
-@media screen and (max-width: 767px) {
-  .nav__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__link {
@@ -525,14 +527,84 @@ body {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: block;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__item {
+    position: relative;
+    padding: 32px 0;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__link.current-page::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+}
+
+.contacts__link {
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: inherit;
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contacts__link {
+    font-size: 24px;
+  }
+  .contacts__link.tel {
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts__link {
+    font-size: 12px;
+  }
+  .contacts__link.email {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -540,17 +612,16 @@ body {
     margin-top: auto;
     margin-bottom: 64px;
   }
+  .contacts__link.tel {
+    margin-bottom: 32px;
+    font-size: 34px;
+  }
 }
 
-.contacts__link {
-  color: inherit;
-  font-size: 24px;
-}
-
-.contacts__link.tel {
-  color: #2196f3;
-  margin-bottom: 32px;
-  font-size: 34px;
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .hero {
@@ -851,6 +922,10 @@ body {
 
 .social-links__item:not(:first-child) {
   padding-left: 10px;
+}
+
+.social-links__link {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {

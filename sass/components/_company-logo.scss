@@ -15,3 +15,15 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .page-header .company-logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .page-header .company-logo {
+    margin-right: 93px;
+  }
+}

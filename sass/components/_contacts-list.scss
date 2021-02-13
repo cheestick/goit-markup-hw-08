@@ -1,35 +1,55 @@
 .contacts {
   display: flex;
-  flex-direction: column-reverse;
+
+  &__link {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    line-height: inherit;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (max-width: $tablet - 1px) {
+    flex-direction: column-reverse;
+
+    &__link {
+      font-size: 24px;
+    }
+
+    &__link.tel {
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    flex-direction: column;
+
+    &__link {
+      font-size: 12px;
+    }
+
+    &__link.email {
+      margin-bottom: 10px;
+    }
+  }
 
   @media screen and (max-width: $tablet - 1px) {
     margin-top: auto;
     margin-bottom: 64px;
+
+    &__link.tel {
+      margin-bottom: 32px;
+      font-size: 34px;
+    }
   }
 
-  &__link {
-    color: inherit;
-    font-size: 24px;
+  @media screen and (min-width: $desktop) {
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-
-  &__link.tel {
-    color: $accent-color;
-
-    margin-bottom: 32px;
-    font-size: 34px;
-  }
-
-  // margin-left: auto;
-
-  // & .page-header__link {
-  //   display: flex;
-  //   align-items: center;
-  //   color: $text-color;
-  //   line-height: inherit;
-
-  //   &:hover,
-  //   &:focus {
-  //     color: $accent-color;
-  //   }
-  // }
 }

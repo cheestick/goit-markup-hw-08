@@ -1,4 +1,15 @@
 .mobile-menu {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    &__nav {
+      // margin-right: auto;
+    }
+  }
+
   @media screen and (max-width: $tablet - 1px) {
     position: absolute;
     display: none;
@@ -18,13 +29,5 @@
       display: flex;
       flex-direction: column;
     }
-
-    // &__nav {
-    // }
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
   }
 }
