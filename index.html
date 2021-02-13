@@ -20,10 +20,12 @@
             aria-label="логотип компании WebStudio"
             lang="en"><span class="company-logo--colored">Web</span>Studio</a>
 
-        <button type="button" class="button-menu" data-menu-button>
-          <svg width="40px" height="40px" class="button-menu__icon">
-            <use href="./images/svg/icons-sprite.svg#icon-mobile-button" class="button-menu__icon--to-open"></use>
-            <use href="./images/svg/icons-sprite.svg#icon-mobile-button-x" class="button-menu__icon--to-close"></use>
+        <button type="button" class="button-menu " data-menu-button>
+          <svg width="40px" height="40px" 
+               aria-label="переключатель мобильного меню" 
+               class="button-menu__icon">
+            <use href="./images/svg/icons-sprite.svg#icon-mobile-button" class="button-menu__icon--open"></use>
+            <use href="./images/svg/icons-sprite.svg#icon-mobile-button-x" class="button-menu__icon--close"></use>
           </svg>
         </button>
         
@@ -31,7 +33,7 @@
           <nav class="mobile-menu__nav">          
               <ul class="list-reset nav">
                 <li class="nav__item">
-                  <a class="link-reset nav__link  current-page" href="./index.html">
+                  <a class="link-reset nav__link current-page" href="./index.html">
                     Студия
                   </a>
                 </li>
@@ -58,13 +60,20 @@
                 </a>
               </li>
               <li class="contacts__item">
-                <a class="link-reset contacts__link" href="tel:+380961111111">
+                <a class="link-reset contacts__link tel" href="tel:+380961111111">
                   <svg class="icon icon__smartphone">
                     <use href="./images/svg/icons-sprite.svg#icon-smartphone"/>
                   </svg>
                   <span>+38 096 111 11 11</span>
                 </a>
               </li>
+            </ul>
+
+            <ul class="list-reset social-links">
+              <li class="social-links__item">Instagram</li>
+              <li class="social-links__item">Twitter</li>
+              <li class="social-links__item">Facebook</li>
+              <li class="social-links__item">LinkedIn</li>
             </ul>
           </div>
       </div>

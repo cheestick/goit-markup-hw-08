@@ -1,0 +1,20 @@
+/* navigation */
+.nav {
+  // display: flex;
+  // align-items: center;
+
+  // & .logo {
+  //   margin-right: 93px;
+  // }
+  @media screen and (max-width: $tablet - 1px) {
+    &__item:not(:last-child) {
+      // display: flex;
+      margin-bottom: 32px;
+    }
+  }
+
+  // &__pages-list > .item:not(:last-child),
+  // &__contacts-list > .item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
+}
