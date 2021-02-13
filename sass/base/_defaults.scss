@@ -60,3 +60,10 @@ body {
   color: $primary-font-color;
   text-align: center;
 }
+
+%social-networks {
+  display: flex;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+}

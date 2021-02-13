@@ -34,3 +34,30 @@
     display: none;
   }
 }
+
+// modal window clost button
+.button-close {
+  position: absolute;
+  padding: 0;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  font-size: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  &__icon {
+    display: block;
+    margin: auto;
+    width: 11px;
+    height: 11px;
+  }
+}

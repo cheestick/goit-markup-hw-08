@@ -1,0 +1,12 @@
+.contact {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__tel,
+  &__tel:visited,
+  &__email,
+  &__email:visited {
+    color: $footer-contacts-color;
+  }
+}

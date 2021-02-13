@@ -1,5 +1,5 @@
 .social-network {
-  &__item:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 10px;
   }
 
@@ -34,7 +34,7 @@
     transition: fill $transition-defaults;
   }
 
-  &--light-icon {
+  &__icon--light {
     fill: $fill-light;
   }
 }

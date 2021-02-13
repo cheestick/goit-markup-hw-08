@@ -31,10 +31,7 @@
   }
 
   &__social-networks {
-    display: flex;
-    width: 206px;
-    margin-right: auto;
-    margin-left: auto;
+    @extend %social-networks;
   }
 
   &__avatar {

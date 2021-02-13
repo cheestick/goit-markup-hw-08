@@ -1,0 +1,55 @@
+.subscribe-block {
+  margin-top: 12px;
+
+  &__text {
+    @extend .subscribe__text;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__email {
+    // width: 358px;
+    height: 50px;
+    // margin-right: 12px;
+    padding: 15px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+
+    box-shadow: $button-shadow;
+  }
+
+  &__button {
+    @extend .button;
+    padding: 10px 29px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & .button__icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: $tablet - 1px) {
+    &__form {
+      flex-direction: column;
+    }
+
+    &__email {
+      margin-bottom: 20px;
+    }
+  }
+}

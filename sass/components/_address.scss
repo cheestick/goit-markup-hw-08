@@ -1,0 +1,14 @@
+.address {
+  font-style: normal;
+  // margin-right: 70px;
+  margin-bottom: 60px;
+
+  &__postal {
+    color: $color-light;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  &__contacts {
+  }
+}

@@ -1,0 +1,13 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    // justify-content: stretch;
+    text-align: center;
+  }
+}
