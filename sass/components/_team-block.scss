@@ -16,4 +16,15 @@
     font-size: 0;
     margin: -15px;
   }
+
+  @media screen and (min-width: $desktop) {
+    & .container {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
+    &__heading {
+      padding-bottom: 50px;
+    }
+  }
 }

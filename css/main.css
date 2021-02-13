@@ -668,7 +668,7 @@ body {
 @media screen and (min-width: 1200px) {
   .features-block .container {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -765,9 +765,13 @@ body {
   background-image: url("../images/svg/optimized/astronaut.svg");
 }
 
-@media screen and (max-width: 1199px) {
-  .directions-block {
-    display: none;
+@media screen and (min-width: 1200px) {
+  .directions-block .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .directions-block__heading {
+    margin-bottom: 50px;
   }
 }
 
@@ -804,6 +808,12 @@ body {
   background: rgba(47, 48, 58, 0.8);
 }
 
+@media screen and (max-width: 1199px) {
+  .directions {
+    display: none;
+  }
+}
+
 .team-block {
   background-color: #f5f4fa;
 }
@@ -821,6 +831,16 @@ body {
       flex-wrap: wrap;
   font-size: 0;
   margin: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-block .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team-block__heading {
+    padding-bottom: 50px;
+  }
 }
 
 .teammate {
@@ -949,6 +969,16 @@ body {
       flex-wrap: wrap;
   color: #afb1b8;
   margin: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-block .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients-block__heading {
+    padding-bottom: 50px;
+  }
 }
 
 .client {
