@@ -1199,6 +1199,12 @@ body {
   margin-bottom: 9px;
 }
 
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
+
 .contact:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -1220,6 +1226,7 @@ body {
 @media screen and (min-width: 1200px) {
   .join-block {
     margin-top: 12px;
+    margin-bottom: 0;
   }
 }
 

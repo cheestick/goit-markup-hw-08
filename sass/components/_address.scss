@@ -9,6 +9,7 @@
     margin-bottom: 9px;
   }
 
-  // &__contacts {
-  // }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
