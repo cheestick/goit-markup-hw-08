@@ -1030,7 +1030,7 @@ body {
   margin: -15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients-block__heading {
     font-size: 28px;
   }
