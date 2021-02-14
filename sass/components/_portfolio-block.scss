@@ -1,0 +1,46 @@
+.portfolio-block {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__filters {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .result-list {
+    margin: -15px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    &__filters {
+      margin-bottom: 30px - 15px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    &__filters {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .container {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
+    &__filters {
+      justify-content: center;
+      margin-bottom: 52px;
+    }
+  }
+}
