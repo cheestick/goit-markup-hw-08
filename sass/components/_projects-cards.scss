@@ -71,7 +71,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(100%);
+    transform: translateY(105%);
     transition: transform $transition-defaults;
     // z-index: 0;
   }
@@ -91,5 +91,11 @@
 
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+  .project-card:first-child .project-card__type {
+    margin-bottom: 20px + 16px;
   }
 }
