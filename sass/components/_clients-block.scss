@@ -15,6 +15,12 @@
     margin: -15px;
   }
 
+  @media screen and (max-width: $tablet - 1px) {
+    &__heading {
+      font-size: 28px;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     & .container {
       padding-top: 94px;

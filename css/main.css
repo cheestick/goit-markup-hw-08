@@ -864,6 +864,12 @@ body {
   margin: -15px;
 }
 
+@media screen and (max-width: 1199px) {
+  .team-block__heading {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .team-block .container {
     padding-top: 94px;
@@ -1022,6 +1028,12 @@ body {
       flex-wrap: wrap;
   color: #afb1b8;
   margin: -15px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients-block__heading {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
