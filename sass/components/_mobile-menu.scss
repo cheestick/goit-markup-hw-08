@@ -1,5 +1,4 @@
 .mobile-menu {
-  z-index: 5;
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
@@ -26,6 +25,7 @@
     &.is-open {
       display: flex;
       flex-direction: column;
+      z-index: 5;
     }
   }
 }
