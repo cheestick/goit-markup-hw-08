@@ -8,7 +8,7 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $transition-defaults;
-  z-index: 2;
+  z-index: 10;
 
   &--hidden {
     opacity: 0;
